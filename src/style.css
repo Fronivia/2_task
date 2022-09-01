@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@layer components {
+    .nav {
+        @apply pt-3 pb-[28px] flex flex-col gap-4 px-[15px] border-x border-b border-solid border-lightGray sm:flex-row sm:gap-8 sm:p-4 sm:gap-8
+    }
+
+    .nav-item {
+        @apply text-sm leading-4 font-normal tracking-[0.5px]
+    }
+
+    .form {
+        @apply flex flex-col gap-[13px] py-3 px-3 border-x border-b border-solid border-lightGray sm:flex-row sm:px-4 sm:justify-between sm:gap-2 sm:py-4
+    }
+
+    .input-placeholder {
+        @apply placeholder:text-sm placeholder:leading-4 placeholder:font-normal
+    }
+
+    .select {
+        @apply h-10 text-sm leading-4 font-normal rounded pl-[9px]
+    }
+
+    .bill-card_desktop-title {
+        @apply flex h-[42px] items-center border-b border-solid border-lightGray
+    }
+
+    .bill-card_desktop {
+        @apply flex h-[54px] items-center border-b border-solid border-lightGray
+    }
+
+    .outlet {
+        @apply w-[149px] min-w-[149px]
+    }
+
+    .bill-sum {
+        @apply w-[100px] text-right
+    }
+
+    .received {
+        @apply w-[109px] text-right mr-[114px]
+    }
+
+    .checkbox {
+        @apply w-[47px] flex justify-center items-center
+    }
+
+    .title-text {
+        @apply text-xs font-medium leading-[18px] text-deepDark
+    }
+
+    .bill-text {
+        @apply text-sm font-normal leading-[18px] text-deepDark
+    }
+
+    .bill-criterion {
+        @apply text-xs font-medium leading-[18px] text-deepDark
+    }
+
+    .bill-description {
+        @apply text-sm font-normal leading-[18px] text-deepDark
+    }
+
+    .bill-card {
+        @apply py-3 px-3 border-b border-x border-solid border-lightGray flex flex-col gap-[1.5px] sm:hidden
+    }
+
+    .test {
+        @apply before:content-[''] before:block before:h-0.5 before:bg-deepPurple before:absolute before:bottom-[-18px] before:left-0 before:right-0 sm:before:bottom-[-16px]
+    }
+
+    .status {
+        @apply text-xs py-1 px-[10px] rounded-[11px] leading-[14px] font-medium whitespace-nowrap
+    }
+}

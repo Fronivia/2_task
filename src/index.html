@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+    <body>
+        <div class="flex justify-center">
+            <div class="w-screen pt-[19px] px-[23px] flex flex-col justify-center border-x border-solid border-lightGray bg-whiteSmoke sm:pt-[60px]">
+                <header class="flex flex-col items-start gap-[13px] flex-wrap pb-[13px] sm:flex-row sm:justify-between sm:gap-0">
+                    <!--                // ЗАМЕТКА ДОБАВИТЬ ШРИФТ-->
+                    <h1 class="font-bold text-[28px] leading-[38px]">Все счета</h1>
+                    <button class="px-4 py-2 bg-deepPurple rounded font-normal text-white text-[15px] leading-[22px] tracking-[0.5px]">Выставить счет</button>
+                </header>
+                <div class="w-full flex flex-col justify-center bg-white">
+                    <nav class="nav">
+                        <a href="#" class="nav-item">Выставленные</a>
+                        <a href="#" class="nav-item">К оплате</a>
+<!--                        ЗАМЕТКА ЗАДАТЬ ВОПРОС-->
+                        <span class="nav-item"><a href="#" class="relative test">История</a></span>
+                    </nav>
+                    <form action="" class="form">
+                        <select class="select border border-solid border-lightGray sm:w-[260px]">
+                            <option value="Все торговые операции">Все торговые точки и операции</option>
+                        </select>
+                        <input type="text" class="input-placeholder h-10 border rounded border-solid border-lightGray py-3 pl-[7px] pr-3 flex-grow" placeholder="Поиск по номеру счета">
+                        <select class="select bg-lightGray sm:w-[168px]">
+                            <option value="Фильтры">Фильтры</option>
+                        </select>
+                        <select disabled class="select bg-lightGray sm:w-[168px]">
+                            <option value="Действия">Действия</option>
+                        </select>
+                    </form>
+                    <div class="w-full flex flex-col justify-center hidden sm:block">
+                        <div class="bill-card_desktop-title">
+                            <div class="checkbox w-[47px] flex justify-center items-center">
+                                <div class="w-4 h-4 border border-solid border-darkGray rounder-[3px]"></div>
+                            </div>
+                            <div class="w-[143px] title-text">Номер счёта</div>
+                            <div class="w-[170px] title-text">
+                                Время и дата
+                                <img src="/assets/icons/arrow.svg" alt="arrow" class="inline">
+                            </div>
+                            <div class="outlet title-text">Торговая точка / Оперция</div>
+                            <div class="bill-sum title-text">
+                                Сумма
+                                <img src="/assets/icons/arrow.svg" alt="arrow" class="inline">
+                            </div>
+                            <div class="received title-text">Получено</div>
+                            <div class="grow title-text">Статус</div>
+                        </div>
+
+                        <div class="bill-card_desktop">
+                            <div class="checkbox">
+                                <div class="w-4 h-4 border border-solid border-darkGray rounder-[3px]"></div>
+                            </div>
+                            <div class="w-[143px] bill-text">№32467</div>
+                            <div class="w-[170px] bill-text">11:20 05.01.2019</div>
+                            <div class="outlet bill-text">Smart Лазурный</div>
+                            <div class="bill-sum bill-text">
+                                <div class="inline flex flex-col">
+                                    1500 тг
+                                    <span class="opacity-50 text-[11px] text-right">-150 тг</span>
+                                </div>
+                            </div>
+                            <div class="received bill-text">1350 тг</div>
+                            <div class="grow">
+                                <span class="bg-lightGreen text-deepGreen status">Оплачено</span>
+                            </div>
+                        </div>
+
+                        <div class="bill-card_desktop">
+                            <div class="checkbox">
+                                <div class="w-4 h-4 border border-solid border-darkGray rounder-[3px]"></div>
+                            </div>
+                            <div class="w-[143px] bill-text">№32466</div>
+                            <div class="w-[170px] bill-text">21:18 02.01.2019</div>
+                            <div class="outlet bill-text">Smart Ишим</div>
+                            <div class="bill-sum bill-text flex flex-col">
+                                3 850 тг
+                                <span class="opacity-50 text-[11px]"></span>
+                            </div>
+                            <div class="received bill-text"></div>
+                            <div class="grow">
+                                <span class="bg-lightRed text-deepRed status">Отклонено</span>
+                            </div>
+                        </div>
+
+                        <div class="bill-card_desktop">
+                            <div class="checkbox">
+                                <div class="w-4 h-4 border border-solid border-darkGray rounder-[3px]"></div>
+                            </div>
+                            <div class="w-[143px] bill-text">Вывод</div>
+                            <div class="w-[170px] bill-text">00:00 31.12.2018</div>
+                            <div class="outlet bill-text">−</div>
+                            <div class="bill-sum bill-text flex flex-col">
+                                −16 335 тг
+                                <span class="opacity-50 text-[11px]"></span>
+                            </div>
+                            <div class="received bill-text"></div>
+                            <div class="grow">
+                                <span class="bg-lightBlue text-deepBlue status">Вывод средств</span>
+                            </div>
+                        </div>
+
+                        <div class="bill-card_desktop">
+                            <div class="checkbox">
+                                <div class="w-4 h-4 border border-solid border-darkGray rounder-[3px]"></div>
+                            </div>
+                            <div class="w-[143px] bill-text">№32467</div>
+                            <div class="w-[170px] bill-text">11:20 29.12.2018</div>
+                            <div class="outlet bill-text">Smart Лазурный</div>
+                            <div class="bill-sum bill-text flex flex-col">
+                                1000 тг
+                                <span class="opacity-50 text-[11px]"></span>
+                            </div>
+                            <div class="received bill-text"></div>
+                            <div class="grow">
+                                <span class="bg-lightRed text-deepRed status">Отклонено</span>
+                            </div>
+                        </div>
+
+                        <div class="bill-card_desktop">
+                            <div class="checkbox">
+                                <div class="w-4 h-4 border border-solid border-darkGray rounder-[3px]"></div>
+                            </div>
+                            <div class="w-[143px] bill-text">№32467</div>
+                            <div class="w-[170px] bill-text">11:20 29.12.2018</div>
+                            <div class="outlet bill-text">Smart Лазурный</div>
+                            <div class="bill-sum bill-text flex flex-col">
+                                1500 тг
+                                <span class="opacity-50 text-[11px]">−150 тг</span>
+                            </div>
+                            <div class="received bill-text">1350 тг</div>
+                            <div class="grow">
+                                <span class="bg-lightGreen text-deepGreen status">Оплачено</span>
+                            </div>
+                        </div>
+
+                        <div class="bill-card_desktop">
+                            <div class="checkbox">
+                                <div class="w-4 h-4 border border-solid border-darkGray rounder-[3px]"></div>
+                            </div>
+                            <div class="w-[143px] bill-text">Комиссия</div>
+                            <div class="w-[170px] bill-text">11:20 29.12.2018</div>
+                            <div class="outlet bill-text">−</div>
+                            <div class="bill-sum bill-text flex flex-col text-deepRed">
+                                −168 тг
+                                <span class="opacity-50 text-[11px]"></span>
+                            </div>
+                            <div class="received bill-text"></div>
+                            <div class="grow">
+                                <span class="bg-lightRed text-deepRed status">Комиссия</span>
+                            </div>
+                        </div>
+
+                        <div class="bill-card_desktop">
+                            <div class="checkbox">
+                                <div class="w-4 h-4 border border-solid border-darkGray rounder-[3px]"></div>
+                            </div>
+                            <div class="w-[143px] bill-text">№32467</div>
+                            <div class="w-[170px] bill-text">11:20 29.12.2018</div>
+                            <div class="outlet bill-text">Smart Лазурный</div>
+                            <div class="bill-sum bill-text flex flex-col">
+                                1500 тг
+                                <span class="opacity-50 text-[11px]">−150 тг</span>
+                            </div>
+                            <div class="received bill-text">1350 тг</div>
+                            <div class="grow">
+                                <span class="bg-lightGreen text-deepGreen status">Оплачено</span>
+                            </div>
+                        </div>
+
+                        <div class="bill-card_desktop">
+                            <div class="checkbox">
+                                <div class="w-4 h-4 border border-solid border-darkGray rounder-[3px]"></div>
+                            </div>
+                            <div class="w-[143px] bill-text">№32467</div>
+                            <div class="w-[170px] bill-text">11:20 29.12.2018</div>
+                            <div class="outlet bill-text">Smart Ишим</div>
+                            <div class="bill-sum bill-text flex flex-col">
+                                9 980 тг
+                                <span class="opacity-50 text-[11px]">−998 тг</span>
+                            </div>
+                            <div class="received bill-text">8 982 тг</div>
+                            <div class="grow">
+                                <span class="bg-lightGreen text-deepGreen status">Оплачено</span>
+                            </div>
+                        </div>
+                    </div>
+<!--                    MOBILE-->
+
+                    <div class="bill-card">
+                        <p class="bill-criterion">Номер счёта</p>
+                        <p class="bill-description">№32467</p>
+                        <p class="bill-criterion">Время и дата</p>
+                        <p class="bill-description">11:20 05.01.2019</p>
+                        <p class="bill-criterion">Торговая точка / Оперция</p>
+                        <p class="bill-description">Smart Лазурный</p>
+                        <p class="bill-criterion">Сумма</p>
+                        <p class="bill-description">1500 тг</p>
+                        <p class="bill-criterion">Получено</p>
+                        <p class="bill-description">1350 тг</p>
+                        <p class="bill-criterion">Статус</p>
+                        <p class="">
+                            <span class="status bg-lightGreen text-deepGreen">Оплачено</span>
+                        </p>
+                    </div>
+
+                    <div class="bill-card">
+                        <p class="bill-criterion">Номер счёта</p>
+                        <p class="bill-description">№32467</p>
+                        <p class="bill-criterion">Время и дата</p>
+                        <p class="bill-description">11:20 05.01.2019</p>
+                        <p class="bill-criterion">Торговая точка / Оперция</p>
+                        <p class="bill-description">Smart Лазурный</p>
+                        <p class="bill-criterion">Сумма</p>
+                        <p class="bill-description">1500 тг</p>
+                        <p class="bill-criterion">Получено</p>
+                        <p class="bill-description">1350 тг</p>
+                        <p class="bill-criterion">Статус</p>
+                        <p class="">
+                            <span class="status bg-lightGreen text-deepGreen">Оплачено</span>
+                        </p>
+                    </div>
+
+                    <div class="bill-card">
+                        <p class="bill-criterion">Номер счёта</p>
+                        <p class="bill-description">№32467</p>
+                        <p class="bill-criterion">Время и дата</p>
+                        <p class="bill-description">11:20 05.01.2019</p>
+                        <p class="bill-criterion">Торговая точка / Оперция</p>
+                        <p class="bill-description">Smart Лазурный</p>
+                        <p class="bill-criterion">Сумма</p>
+                        <p class="bill-description">1500 тг</p>
+                        <p class="bill-criterion">Получено</p>
+                        <p class="bill-description">1350 тг</p>
+                        <p class="bill-criterion">Статус</p>
+                        <p class="status bg-lightGreen inline-block text-deepGreen">Оплачено</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

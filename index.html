@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dist/output.css">
 </head>
-    <body>
+    <body class="bg-whiteSmoke">
         <div class="flex justify-center">
-            <div class="w-screen pt-[19px] px-[23px] flex flex-col justify-center border-x border-solid border-lightGray bg-whiteSmoke sm:pt-[60px]">
-                <header class="flex flex-col items-start gap-[13px] flex-wrap pb-[13px] sm:flex-row sm:justify-between sm:gap-0">
+            <div class="w-screen pt-[19px] px-[23px] flex flex-col justify-center border-x border-solid border-lightGray lg:pt-[60px]">
+                <header class="flex flex-col items-start gap-[13px] flex-wrap pb-[13px] lg:flex-row lg:justify-between lg:gap-0">
                     <!--                // ЗАМЕТКА ДОБАВИТЬ ШРИФТ-->
                     <h1 class="font-bold text-[28px] leading-[38px]">Все счета</h1>
                     <button class="px-4 py-2 bg-deepPurple rounded font-normal text-white text-[15px] leading-[22px] tracking-[0.5px]">Выставить счет</button>
@@ -22,18 +22,18 @@
                         <span class="nav-item"><a href="#" class="relative test">История</a></span>
                     </nav>
                     <form action="" class="form">
-                        <select class="select border border-solid border-lightGray sm:w-[260px]">
+                        <select class="select border border-solid border-lightGray lg:w-[260px]">
                             <option value="Все торговые операции">Все торговые точки и операции</option>
                         </select>
                         <input type="text" class="input-placeholder h-10 border rounded border-solid border-lightGray py-3 pl-[7px] pr-3 flex-grow" placeholder="Поиск по номеру счета">
-                        <select class="select bg-lightGray sm:w-[168px]">
+                        <select class="select bg-lightGray lg:w-[168px]">
                             <option value="Фильтры">Фильтры</option>
                         </select>
-                        <select disabled class="select bg-lightGray sm:w-[168px]">
+                        <select disabled class="select bg-lightGray lg:w-[168px]">
                             <option value="Действия">Действия</option>
                         </select>
                     </form>
-                    <div class="w-full flex flex-col justify-center hidden sm:block">
+                    <div class="w-full flex flex-col justify-center hidden lg:block">
                         <div class="bill-card_desktop-title">
                             <div class="checkbox w-[47px] flex justify-center items-center">
                                 <div class="w-4 h-4 border border-solid border-darkGray rounder-[3px]"></div>
@@ -41,12 +41,12 @@
                             <div class="w-[143px] title-text">Номер счёта</div>
                             <div class="w-[170px] title-text">
                                 Время и дата
-                                <img src="/assets/icons/arrow.svg" alt="arrow" class="inline">
+                                <img src="./assets/icons/arrow.svg" alt="arrow" class="inline">
                             </div>
                             <div class="outlet title-text">Торговая точка / Оперция</div>
                             <div class="bill-sum title-text">
                                 Сумма
-                                <img src="/assets/icons/arrow.svg" alt="arrow" class="inline">
+                                <img src="./assets/icons/arrow.svg" alt="arrow" class="inline">
                             </div>
                             <div class="received title-text">Получено</div>
                             <div class="grow title-text">Статус</div>

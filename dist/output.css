@@ -567,7 +567,7 @@ video {
   padding-bottom: 28px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
   .nav {
     flex-direction: row;
     gap: 2rem;
@@ -598,7 +598,7 @@ video {
   padding-right: 0.75rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
   .form {
     flex-direction: row;
     justify-content: space-between;
@@ -726,7 +726,7 @@ video {
   padding-right: 0.75rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
   .bill-card {
     display: none;
   }
@@ -745,7 +745,7 @@ video {
   content: var(--tw-content);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
   .test::before {
     content: var(--tw-content);
     bottom: -16px;
@@ -1013,32 +1013,32 @@ video {
   box-sizing: border-box;
 }
 
-@media (min-width: 640px) {
-  .sm\:block {
+@media (min-width: 1024px) {
+  .lg\:block {
     display: block;
   }
 
-  .sm\:w-\[260px\] {
+  .lg\:w-\[260px\] {
     width: 260px;
   }
 
-  .sm\:w-\[168px\] {
+  .lg\:w-\[168px\] {
     width: 168px;
   }
 
-  .sm\:flex-row {
+  .lg\:flex-row {
     flex-direction: row;
   }
 
-  .sm\:justify-between {
+  .lg\:justify-between {
     justify-content: space-between;
   }
 
-  .sm\:gap-0 {
+  .lg\:gap-0 {
     gap: 0px;
   }
 
-  .sm\:pt-\[60px\] {
+  .lg\:pt-\[60px\] {
     padding-top: 60px;
   }
 }

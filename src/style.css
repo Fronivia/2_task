@@ -10,7 +10,7 @@
 
 @layer components {
     .nav {
-        @apply pt-3 pb-[28px] flex flex-col gap-4 px-[15px] border-x border-b border-solid border-lightGray sm:flex-row sm:gap-8 sm:p-4 sm:gap-8
+        @apply pt-3 pb-[28px] flex flex-col gap-4 px-[15px] border-x border-b border-solid border-lightGray lg:flex-row lg:gap-8 lg:p-4 lg:gap-8
     }
 
     .nav-item {
@@ -18,7 +18,7 @@
     }
 
     .form {
-        @apply flex flex-col gap-[13px] py-3 px-3 border-x border-b border-solid border-lightGray sm:flex-row sm:px-4 sm:justify-between sm:gap-2 sm:py-4
+        @apply flex flex-col gap-[13px] py-3 px-3 border-x border-b border-solid border-lightGray lg:flex-row lg:px-4 lg:justify-between lg:gap-2 lg:py-4
     }
 
     .input-placeholder {
@@ -70,11 +70,11 @@
     }
 
     .bill-card {
-        @apply py-3 px-3 border-b border-x border-solid border-lightGray flex flex-col gap-[1.5px] sm:hidden
+        @apply py-3 px-3 border-b border-x border-solid border-lightGray flex flex-col gap-[1.5px] lg:hidden
     }
 
     .test {
-        @apply before:content-[''] before:block before:h-0.5 before:bg-deepPurple before:absolute before:bottom-[-18px] before:left-0 before:right-0 sm:before:bottom-[-16px]
+        @apply before:content-[''] before:block before:h-0.5 before:bg-deepPurple before:absolute before:bottom-[-18px] before:left-0 before:right-0 lg:before:bottom-[-16px]
     }
 
     .status {
